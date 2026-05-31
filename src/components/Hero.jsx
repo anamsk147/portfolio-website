@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section className="min-h-screen bg-slate-900 text-white flex flex-col-reverse lg:flex-row items-center justify-between px-8 lg:px-20 pt-24 gap-12">
       
-      <div className="max-w-3xl">
+      <div className="max-w-3xl text-center lg:text-left">
         <h1 className="text-5xl lg:text-7xl font-extrabold mb-4">
           Anam Shaikh
         </h1>
@@ -30,7 +30,7 @@ function Hero() {
           </p>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-4">
           <a
             href="#projects"
             className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg"
