@@ -4,6 +4,7 @@ import Highlights from "./components/Highlights";
 import About from "./components/About";
 import FocusAreas from "./components/FocusAreas";
 import Projects from "./components/Projects";
+import Research from "./components/Research";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <FocusAreas />
       <Projects />
+      <Research />
     </>
   );
 }
