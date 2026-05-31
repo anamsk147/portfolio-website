@@ -5,7 +5,7 @@ function About() {
       className="bg-slate-900 text-white py-24"
     >
       <div className="max-w-5xl mx-auto px-8">
-        <h2 className="text-4xl font-bold mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold mb-10">
           About Me
         </h2>
 

@@ -15,7 +15,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-800 p-8 rounded-xl hover:scale-105 transition duration-300"
+              className="bg-slate-800 p-8 rounded-xl hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 transition duration-300 border border-slate-700"
             >
               <h3 className="text-2xl font-semibold mb-4">
                 {project.title}

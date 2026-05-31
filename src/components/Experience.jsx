@@ -4,7 +4,7 @@ function Experience() {
   return (
     <section className="bg-slate-900 text-white py-24">
       <div className="max-w-5xl mx-auto px-8">
-        <h2 className="text-4xl font-bold text-center mb-14">
+        <h2 className="text-4xl md:text-5xl font-bold mb-10">
           Experience
         </h2>
 
