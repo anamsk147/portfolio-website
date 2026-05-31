@@ -17,13 +17,20 @@ function Hero() {
         </p>
 
         <div className="flex gap-4">
-          <button className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg">
-            View Projects
-          </button>
+          <a
+    href="#projects"
+    className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg"
+  >
+    View Projects
+  </a>
 
-          <button className="bg-white text-slate-900 px-6 py-3 rounded-lg">
-            Download Resume
-          </button>
+  <a
+    href="/resume.pdf"
+    download
+    className="bg-white text-slate-900 px-6 py-3 rounded-lg"
+  >
+    Download Resume
+  </a>
         </div>
       </div>
 
