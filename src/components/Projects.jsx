@@ -1,31 +1,6 @@
-function Projects() {
-  const projects = [
-    {
-      title: "Modeling the Electric Mobility Ecosystem in India",
-      description:
-        "Achieved R² = 0.833 in charging duration prediction and forecasted the need for approximately 17,491 additional charging stations in India.",
-      tech: "Python • ARIMA • K-Means • Regression",
-    },
-    {
-      title: "Fraud Detection Using Apache Spark",
-      description:
-        "Built scalable fraud detection models using distributed computing and machine learning techniques on large datasets.",
-      tech: "Spark • Hadoop • MLlib • Scala",
-    },
-    {
-      title: "Frequent Itemset Mining",
-      description:
-        "Applied Apriori and FP-Growth algorithms to discover purchasing patterns and support recommendation systems.",
-      tech: "Python • Apriori • FP-Growth",
-    },
-    {
-      title: "Credit Card Complaints Dashboard",
-      description:
-        "Designed an interactive Tableau dashboard to analyze complaint trends and support business decision-making.",
-      tech: "Tableau • Data Visualization",
-    },
-  ];
+import { projects } from "../data/projects";
 
+function Projects() {
   return (
     <section
       id="projects"
@@ -40,19 +15,26 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-800 p-8 rounded-xl hover:scale-105 transition"
+              className="bg-slate-800 p-8 rounded-xl hover:scale-105 transition duration-300"
             >
               <h3 className="text-2xl font-semibold mb-4">
                 {project.title}
               </h3>
 
-              <p className="text-slate-300 mb-4">
+              <p className="text-slate-300 mb-6">
                 {project.description}
               </p>
 
-              <span className="text-blue-400">
-                {project.tech}
-              </span>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
