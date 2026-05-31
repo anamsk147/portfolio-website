@@ -15,41 +15,55 @@ function Contact() {
           new opportunities.
         </p>
 
-        <div className="flex flex-col gap-4 items-center">
-          <a
-            href="https://linkedin.com/in/anamshahidshaikh"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-400 hover:underline"
-          >
-            LinkedIn
-          </a>
+        <div className="grid md:grid-cols-2 gap-6 mt-10">
+  
+  <a
+    href="https://linkedin.com/in/anamshahidshaikh"
+    target="_blank"
+    rel="noreferrer"
+    className="bg-slate-800 p-6 rounded-xl hover:bg-slate-700 transition"
+  >
+    <h3 className="text-xl font-semibold">LinkedIn</h3>
+    <p className="text-slate-400">
+      Connect professionally
+    </p>
+  </a>
 
-          <a
-            href="https://github.com/anamsk147"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-400 hover:underline"
-          >
-            GitHub
-          </a>
+  <a
+    href="https://github.com/anamsk147"
+    target="_blank"
+    rel="noreferrer"
+    className="bg-slate-800 p-6 rounded-xl hover:bg-slate-700 transition"
+  >
+    <h3 className="text-xl font-semibold">GitHub</h3>
+    <p className="text-slate-400">
+      View my repositories
+    </p>
+  </a>
 
-          <a
-            href="https://public.tableau.com/app/profile/anam.shaikh1182/vizzes"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-400 hover:underline"
-          >
-            Tableau Public
-          </a>
+  <a
+    href="https://public.tableau.com/app/profile/anam.shaikh1182/vizzes"
+    target="_blank"
+    rel="noreferrer"
+    className="bg-slate-800 p-6 rounded-xl hover:bg-slate-700 transition"
+  >
+    <h3 className="text-xl font-semibold">Tableau Public</h3>
+    <p className="text-slate-400">
+      Explore dashboards
+    </p>
+  </a>
 
-          <a
-            href="mailto:anamshaikh0306@gmail.com"
-            className="text-blue-400 hover:underline"
-          >
-            Email Me
-          </a>
-        </div>
+  <a
+    href="mailto:anamshaikh0306@gmail.com"
+    className="bg-slate-800 p-6 rounded-xl hover:bg-slate-700 transition"
+  >
+    <h3 className="text-xl font-semibold">Email</h3>
+    <p className="text-slate-400">
+      Get in touch
+    </p>
+  </a>
+
+</div>
       </div>
     </section>
   );
